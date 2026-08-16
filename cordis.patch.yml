@@ -1,0 +1,12 @@
+# dsh-taskboard-plugin bundle patch — 单行双面包插件行（契约 C2：新行挂 insert: 下）。
+# ⚠️ 本行 config 必须与 Host 半边 Config schema 默认值保持一致（§2.1.1 推论：
+#    用户 profile patch 覆盖本行时整行替换，未重述键回落 Config 默认，两处不一致会产生意外默认）。
+- insert:
+    - id: taskboard
+      name: dsh-taskboard-plugin
+      config:
+        port: 47823
+        dataDir: ""
+        autoStart: true
+        restartBackoffMs: 3000
+        appRoot: ""
